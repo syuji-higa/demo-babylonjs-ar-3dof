@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html, body {
+        overflow: hidden;
+        width   : 100%;
+        height  : 100%;
+        margin  : 0;
+        padding : 0;
+    }
+    #renderCanvas {
+        width   : 100%;
+        height  : 100%;
+        touch-action: none;
+    }
+    #permissionButton {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="renderCanvas"></canvas>
+  <button id="permissionButton" type="button">デバイスの向きの取得を許可</button>
+  <script src="https://preview.babylonjs.com/babylon.js"></script>
+  <script src="https://code.jquery.com/pep/0.4.1/pep.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
